@@ -28,6 +28,10 @@ jobs:
           # update the Node version to meet your needs
           node-version: 18.16.0
           cache: npm
+        
+      - name: 'Create env file'
+        run: |
+          echo "${{ secrets.ENV_FILE }}" > .env
 
       - name: Build
         run: |
