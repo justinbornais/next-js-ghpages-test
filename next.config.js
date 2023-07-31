@@ -4,7 +4,7 @@ let basePath = '';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
+  output: 'export',
   compiler: {
     styledComponents: true
   }
